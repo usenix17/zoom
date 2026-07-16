@@ -29,7 +29,6 @@ pkgver() {
 }
 
 build() {
-  : # escalation smoke-test (substantive change; revert after)
   local ver rpmdb
   ver="$(pkgver)"
   [ -n "$ver" ] || { echo "could not resolve Zoom version" >&2; return 1; }
